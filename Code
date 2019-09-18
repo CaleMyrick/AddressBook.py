@@ -1,0 +1,14 @@
+#takes user input as a string and uses it to parse through the dictionary below
+user_input = input("Please enter a name to begin search: ")
+
+#following the same format, you can add as many contacts below as you need.
+
+contact_list = {'DOUG': {'phone': '555-555-5555', 'email': 'test@testing.com'},
+'AARON': {'phone': '555-555-5555', 'email': 'test@testing.com'}, 'DEMPSEY': {'phone': '555-555-5555', 
+'email': 'test@testing.com'}, 'STEPHEN': {'phone': '555-555-5555', 'email': 'test@testing.com'}}
+
+#prints the user's information in the dictionary that is found to match the user input after it is converted to all capital letters.
+print(contact_list[user_input.upper()]['phone'], contact_list[user_input.upper()]['email'])
+
+#keeps the screen open so that you can read the contact information. simply press enter to exit the program.
+input("Press enter to exit program.")
